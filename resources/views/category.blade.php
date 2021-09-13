@@ -2,9 +2,6 @@
     {{$node->name}}
 </li>
 <ul>
-    @if(count($node->children))
-        @foreach($node->children as $item)
-            @include('category',['node'=>$item])
-        @endforeach
-    @endif
+
+    @each('category',$node->children,'node','no-category')
 </ul>

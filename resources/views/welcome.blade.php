@@ -9,6 +9,6 @@
     </head>
 
     <body>
-        @each('category',$nodes,'node')
+        @each('category',$nodes,'node','no-category')
     </body>
 </html>
